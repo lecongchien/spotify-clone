@@ -1,6 +1,10 @@
 import { useState } from 'react';
 import { baseUrl, clientId, clientSecret, token } from './apiConfig';
 
+
+const getPlaylist = () =>{
+    return 123
+}
 const APIController = {
     getGenres: async () => {
         const result = await fetch(`https://api.spotify.com/v1/browse/categories?locale=sv_US`, {
